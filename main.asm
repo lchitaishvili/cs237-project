@@ -41,18 +41,18 @@
 	    # Store the result in $t0 temporarily
 	    move $t0, $v0
 
-	    blt $t0, 1, upperBoundLessThanOne # If upper bound is less than one
-	    bge $t0, 1, validUpperBound       # else
+	    blt $t0, 1, upperBoundLessThanOne 	# If upper bound is less than one
+	    bge $t0, 1, validUpperBound       	# else
 	    
-	    upperBoundLessThanOne: 
+	 upperBoundLessThanOne: 
 
-	    	li $v0, 4			
-	    	la $a0, invalidUpperBound    # Print the invalidUpperBound message	
-	    	syscall
+	    li $v0, 4			
+	    la $a0, invalidUpperBound  	 	# Print the invalidUpperBound message	
+	    syscall
 
-	    	j initialInput  	     # Return to the previous step	
+	    j initialInput  	     		# Return to the previous step	
 
-	validUpperBound:
+	 validUpperBound:
 
 	    move $a1, $t0
 	    li $v0, 42				# Generated number will be at $a0
@@ -132,7 +132,7 @@
 		
 		j while
 
-	      lowerThanOne:
+	    lowerThanOne:
 		
 		li $v0, 4			# Print the belowLowerBound message
 		la $a0, belowLowerBound
