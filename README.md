@@ -1,1 +1,3 @@
-# cs237-project
+**Guess the Random Number**
+
+**Brief description:** The program that accepts a maximum value from a user, generates a number from 1 to maximum value indicated by the user, and then prompts the user to guess the generated number. If the user’s guess is less than the generated number, the program will print “too low,” and if it’s greater than the random number, the program prints “too high.” Once the user guesses the number, the program will output the number of guess attempts made by the user.
